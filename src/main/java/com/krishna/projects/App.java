@@ -122,9 +122,6 @@ public class App
             c.setAutoCommit(false);
             System.out.println();
             stmt = c.createStatement();
-            String sql = "DELETE from EMPLOYEE where ID=2;";
-            stmt.executeUpdate(sql);
-            c.commit();
 
             ResultSet rs = stmt.executeQuery( "SELECT * FROM EMPLOYEE where id ="+id+";" );
 
